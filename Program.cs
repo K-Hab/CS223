@@ -1,17 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HelloWorld
+public class HelloWorld
 {
-    internal class Program
+    public static void Main(string[] args)
     {
-        static void Main(string[] args)
+        Console.WriteLine("Hello Mono World");
+        for (int i = 0; i < 100; i++)
         {
-            System.Console.WriteLine("Hello World");
-            System.Console.ReadLine();
+            if (i % 2 == 0) Console.WriteLine(i + " number's Even");
+
+            else
+                Console.WriteLine(i + " number's odd");
         }
+
+
+
     }
 }
